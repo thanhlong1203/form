@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./output.css">
+</head>
+<body class="flex justify-center flex-row max-2xl:flex-col max-2xl:items-center">
+  <div class="w-3/12 max-2xl:w-9/12 max-md:w-full bg-black h-80"></div>
+  <form class="w-6/12 max-2xl:w-9/12 max-md:w-full flex flex-col">
+
+    <!-- Title -->
+    <div class="flex items-center flex-col">
+      <p class="w-full text-xl font-medium uppercase text-center">ĐĂNG KÝ DỰ TUYỂN VÀO GIÁO DỤC NGHỀ NGHIỆP</p>
+      <!-- <p>(Ban hành kèm theo QĐ số /QĐ-HNC ngày tháng năm 2023 của Hiệu trưởng trường Cao đẳng Hà Nội)</p> -->
+    </div>
+    
+    <!-- Thông tin cá nhân -->
+    <div class="mt-5 flex flex-col items-center gap-4">
+      <p class="w-9/12 text-lg font-medium border-b border-black">I. Thông tin các nhân</p>
+      <div class="w-9/12 ml-5 flex flex-row max-md:flex-col">
+        <label for="" class="pr-2">1. Họ và tên*:</label>
+        <input type="text" name="" id="" placeholder="Nhập họ và tên" class="border border-blue-300 rounded-sm px-1">
+      </div>
+
+      <div class="w-9/12 ml-5 flex flex-row max-md:flex-col">
+        <label for="" class="pr-2">2. Ngày sinh*:</label>
+        <input type="date" class="border border-blue-300 rounded-sm px-1 max-md:w-full">
+      </div>
+
+      <div class="w-9/12 ml-5 flex flex-row">
+        <p class="pr-2">3. Giới tính:</p>
+        <label for="" class="pr-1">Nam</label>
+        <input type="checkbox" value="Nam" class="border border-blue-300 rounded-sm px-1">
+        <label for="" class="pl-3 pr-1">Nữ</label>
+        <input type="checkbox" value="Nữ" class="border border-blue-300 rounded-sm px-1">
+      </div>
+
+      <div class="w-9/12 ml-5 flex flex-row max-md:flex-col">
+        <label for="" class="pr-2">4. Căn cước công dân: </label>
+        <input type="text" name="" id="" placeholder="Nhập số căn cước công dân" class="border border-blue-300 rounded-sm px-1">
+      </div>
+
+      <div class="w-9/12 ml-5 flex flex-row max-md:flex-col">
+        <label for="" class="pr-2">5. Hộ khẩu thường trú: </label>
+        <input type="text" name="" id="" placeholder="Nhập hộ khẩu thường trú" class="border border-blue-300 rounded-sm px-1">
+      </div>
+
+      <div class="w-9/12 ml-5 flex flex-row">
+        <p class="pr-2">6. Tình độ văn hóa*:</p>
+        <label for="" class="pr-1">THCS</label>
+        <input type="checkbox" value="Nam" class="pr-2">
+        <label for="" class="pr-1 pl-3">THPT</label>
+        <input type="checkbox" value="Nữ">
+      </div>
+
+      <div class="w-9/12 ml-5 flex flex-col">
+        <p>7. Thông tin học tập:</p>
+        <div class="ml-5 mt-4 grid grid-cols-2 gap-4 max-xl:grid-cols-1">
+          <div>
+            <label for="" class="pr-2">Trường: </label>
+            <input type="text" name="" id="" placeholder="Nhập tên trường" class="border border-blue-300 rounded-sm px-1 w-full">
+          </div>
+          <div>
+            <label for="" class="pr-2">Mã tỉnh:</label>
+            <input type="text" name="" id="" placeholder="Nhập mã tỉnh" class="border border-blue-300 rounded-sm px-1 w-full">
+          </div>
+          <div>
+            <label for="" class="pr-2">Mã trường: </label>
+            <input type="text" name="" id="" placeholder="Nhập mã trường" class="border border-blue-300 rounded-sm px-1 w-full">
+          </div>
+          <div>
+            <label for="" class="pr-2">Năm tốt nghiệp: </label>
+            <input type="text" name="" id="" placeholder="Nhập năm tốt nghiệp" class="border border-blue-300 rounded-sm px-1 w-full">
+          </div>
+          <div>
+            <label for="" class="pr-2">Đối tượng ưu tiên: </label>
+            <select id="" class="border border-blue-300 rounded-sm px-1 w-full">
+              <option value="" selected disabled>Chọn đối tượng ưu tiên</option>
+              <option value="">Không thuộc đối tiện ưu tiên</option>
+              <option value="">Đối tượng 01</option>
+              <option value="">Đối tượng 02</option>
+              <option value="">Đối tượng 03</option>
+              <option value="">Đối tượng 04</option>
+              <option value="">Đối tượng 05</option>
+              <option value="">Đối tượng 06</option>
+              <option value="">Đối tượng 07</option>
+            </select>
+          </div>
+          <div>
+            <label for="" class="pr-2">Khu vực ưu tiên: </label>
+            <select id="" class="border border-blue-300 rounded-sm px-1 w-full">
+              <option value="" selected disabled>Chọn khu vực ưu tiên</option>
+              <option value="">Không thuộc khu vực ưu tiên</option>
+              <option value="">Khu vực 1</option>
+              <option value="">Khu vực 2</option>
+              <option value="">Khu vực 3</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-9/12 ml-5 flex flex-row max-md:flex-col">
+        <label for="" class="pr-2">8. Email: </label>
+        <input type="email" name="" id="" placeholder="Nhập email" class="border border-blue-300 rounded-sm px-1">
+      </div>
+
+      <div class="w-9/12 ml-5 flex flex-row max-md:flex-col">
+        <label for="" class="pr-2">9. Điện thoại liên hệ*: </label>
+        <input type="text" name="" id="" placeholder="Nhập điện thoại liên hệ" class="border border-blue-300 rounded-sm px-1">
+      </div>
+
+      <div class="w-9/12 ml-5 flex flex-row max-md:flex-col">
+        <label for="" class="pr-2">10. Địa chỉ liên hệ*: </label>
+        <input type="text" name="" id="" placeholder="Nhập địa chỉ liên hệ" class="border border-blue-300 rounded-sm px-1">
+      </div>
+
+      <div class="w-9/12 ml-5 flex flex-row max-md:flex-col">
+        <label for="" class="pr-2">11. Đối tượng ưu tiên (nếu có): </label>
+        <select id="" class="border border-blue-300 rounded-sm px-1">
+          <option value="" selected disabled>Chọn đối tượng ưu tiên</option>
+          <option value="">Không thuộc đối tiện ưu tiên</option>
+          <option value="">Đối tượng 01</option>
+          <option value="">Đối tượng 02</option>
+          <option value="">Đối tượng 03</option>
+          <option value="">Đối tượng 04</option>
+          <option value="">Đối tượng 05</option>
+          <option value="">Đối tượng 06</option>
+          <option value="">Đối tượng 07</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Thông tin đăng kí học -->
+    <div class="mt-5 flex flex-col items-center gap-4">
+      <p class="w-9/12 text-lg font-medium border-b border-black">II. Thông tin đăng kí học</p>
+      <div class="w-9/12 ml-5 flex flex-row max-md:flex-col">
+        <label for="" class="pr-2">12. Ngành/Nghề học: </label>
+        <select id="" class="border border-blue-300 rounded-sm px-1">
+          <option value="" selected disabled>Chọn ngành/nghề học</option>
+          <option value="">Không thuộc đối tiện ưu tiên</option>
+          <option value="">Điều dưỡng </option>
+          <option value="">Dược</option>
+          <option value="">PHCN-VLTL </option>
+          <option value="">Chăm sóc sắc đẹp</option>
+          <option value="">Kĩ thuật nấu ăn</option>
+          <option value="">Ngôn ngữ Hàn Quốc</option>
+          <option value="">Ngôn ngũ Trung Quốc</option>
+        </select>
+      </div>
+      <div class="w-9/12 ml-5 flex flex-col">
+        <p>13. Kết quả học tập THPT theo tổ hợp xét tuyển</p>
+        <div class="flex flex-col">
+          <div class="flex flex-row mt-4 ml-5 max-md:flex-col">
+            <label for="" class="pr-2">Môn 1: Toán</label>
+            <div class="flex flex-row max-sm:flex-col">
+              <input type="number" name="" id="" placeholder="Nhập điểm môn Toán" class="border border-blue-300 rounded-sm px-1 max-sm:w-full">
+              <p>Điểm</p>
+            </div>
+          </div>
+          <div class="flex flex-row mt-4 ml-5 max-md:flex-col">
+            <label for="" class="pr-2">Môn 2: Văn</label>
+            <div class="flex flex-row max-sm:flex-col">
+              <input type="number" name="" id="" placeholder="Nhập điểm môn Văn" class="border border-blue-300 rounded-sm px-1 max-sm:w-full">
+              <p>Điểm</p>
+            </div>
+          </div>
+          <div class="flex flex-row mt-4 ml-5 max-xl:flex-col">
+            <div class="flex flex-row max-sm:flex-col">
+              <label for="" class="pr-2">Môn 3:</label>
+              <select id="" class="border border-blue-300 rounded-sm px-1 max-sm:w-full">
+                <option value="" selected disabled>Chọn môn 3</option>
+                <option value="">Tiếng Anh</option>
+                <option value="">Sinh học</option>
+                <option value="">Địa lý</option>
+              </select>
+            </div>
+            <div class="flex flex-row max-sm:flex-col">
+              <input type="number" name="" id="" placeholder="Nhập điểm môn 3" class="border border-blue-300 rounded-sm px-1 max-sm:w-full">
+              <p>Điểm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Minh chứng nộp xét tuyển-->
+    <div class="mt-5 flex flex-col items-center gap-4">
+      <p class="w-9/12 text-lg font-medium border-b border-black">III. Minh chứng nộp xét tuyển</p>
+      <div class="w-9/12 ml-5 flex flex-col">
+        <label for="">14. Ảnh học bạ THPT: trang bìa và trang điểm lớp 12</label>
+        <input type="file" name="" id="">
+      </div>
+      <div class="w-9/12 ml-5 flex flex-col">
+        <label for="">15. Ảnh chụp giấy chứng nhận tốt nghiệp tạm thời hoặc bằng tốt nghiệp</label>
+        <input type="file" name="" id="">
+      </div>
+      <div class="w-9/12 ml-5 flex flex-col">
+        <label for="">16. Ảnh chụp giấy chứng nhận ưu tiên (nếu có)</label>
+        <input type="file" name="" id="">
+      </div>
+    </div>
+  </form>
+  <div class="w-3/12 bg-red-400 h-80 max-2xl:w-9/12 max-md:w-full"></div>
+</body>
+</html>
