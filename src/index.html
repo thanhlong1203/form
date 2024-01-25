@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./output.css">
+  <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
 </head>
 <body class="flex justify-center flex-row max-2xl:flex-col max-2xl:items-center">
   <div class="w-3/12 max-2xl:w-9/12 max-md:w-full bg-black h-80"></div>
-  <form class="w-6/12 max-2xl:w-9/12 max-md:w-full flex flex-col">
+  <form class="w-6/12 max-2xl:w-9/12 max-md:w-full flex flex-col pb-10">
 
     <!-- Title -->
     <div class="flex items-center flex-col">
@@ -190,18 +192,129 @@
       <p class="w-9/12 text-lg font-medium border-b border-black">III. Minh chứng nộp xét tuyển</p>
       <div class="w-9/12 ml-5 flex flex-col">
         <label for="">14. Ảnh học bạ THPT: trang bìa và trang điểm lớp 12</label>
-        <input type="file" name="" id="">
+        <div class="file-upload bg-white w-full mx-auto">
+          <div class="image-upload-wrap mt-5 border-2 border-dashed border-blue-300 relative hover:bg-blue-200 hover:border-dashed hover:border-white group">
+            <input class="file-upload-input absolute m-0 p-0 w-full h-full outline-none opacity-0 cursor-pointer" type='file' onchange="readURL(this, '.image-upload-wrap', '.file-upload-image', '.file-upload-content', '.image-title');" accept="image/*" />
+            <div class="drag-text text-center">
+              <h3 class="font-medium text-uppercase text-green-800 py-12 group-hover:text-white">
+                Kéo và thả tệp hoặc chọn thêm hình ảnh
+              </h3>
+            </div>
+          </div>
+          
+          <div class="file-upload-content hidden text-center" ondragover="bindDragEvents('.image-upload-wrap')" ondragleave="bindDragEvents('.image-upload-wrap')">
+            <img class="file-upload-image max-h-200 max-w-200 mx-auto p-4" src="#" alt="your image" />
+            <div class="image-title-wrap px-4 pb-4 text-black">
+              <button type="button" onclick="removeUpload('.image-upload-wrap', '.file-upload-input', '.file-upload-content')" class="remove-image w-200 m-0 text-white bg-red-600 border-none p-2 rounded-md border-b-4 border-red-800 transition-all duration-200 outline-none uppercase font-semibold hover:bg-red-700 hover:border-red-900">
+                Xóa hình ảnh <span class="image-title">Tên hình ảnh upload</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="file-upload-1 bg-white w-full mx-auto">
+          <div class="image-upload-wrap-1 mt-5 border-2 border-dashed border-blue-300 relative hover:bg-blue-200 hover:border-dashed hover:border-white group">
+            <input class="file-upload-input-1 absolute m-0 p-0 w-full h-full outline-none opacity-0 cursor-pointer" type='file' onchange="readURL(this, '.image-upload-wrap-1', '.file-upload-image-1', '.file-upload-content-1', '.image-title-1');" accept="image/*" />
+            <div class="drag-text text-center">
+              <h3 class="font-medium text-uppercase text-green-800 py-12 group-hover:text-white">
+                Kéo và thả tệp hoặc chọn thêm hình ảnh
+              </h3>
+            </div>
+          </div>
+          
+          <div class="file-upload-content-1 hidden text-center" ondragover="bindDragEvents('.image-upload-wrap-1')" ondragleave="bindDragEvents('.image-upload-wrap-1')">
+            <img class="file-upload-image-1 max-h-200 max-w-200 mx-auto p-4" src="#" alt="your image" />
+            <div class="image-title-wrap-1 px-4 pb-4 text-black">
+              <button type="button" onclick="removeUpload('.image-upload-wrap', '.file-upload-input-1', '.file-upload-content-1')" class="remove-image-1 w-200 m-0 text-white bg-red-600 border-none p-2 rounded-md border-b-4 border-red-800 transition-all duration-200 outline-none uppercase font-semibold hover:bg-red-700 hover:border-red-900">
+                Xóa hình ảnh <span class="image-title-1">Tên hình ảnh upload</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- <input type="file" name="" id=""> -->
       </div>
       <div class="w-9/12 ml-5 flex flex-col">
         <label for="">15. Ảnh chụp giấy chứng nhận tốt nghiệp tạm thời hoặc bằng tốt nghiệp</label>
-        <input type="file" name="" id="">
+        <div class="file-upload-2 bg-white w-full mx-auto">
+          <div class="image-upload-wrap-2 mt-5 border-2 border-dashed border-blue-300 relative hover:bg-blue-200 hover:border-dashed hover:border-white group">
+            <input class="file-upload-input-2 absolute m-0 p-0 w-full h-full outline-none opacity-0 cursor-pointer" type='file' onchange="readURL(this, '.image-upload-wrap-2', '.file-upload-image-2', '.file-upload-content-2', '.image-title-2');" accept="image/*" />
+            <div class="drag-text text-center">
+              <h3 class="font-medium text-uppercase text-green-800 py-12 group-hover:text-white">
+                Kéo và thả tệp hoặc chọn thêm hình ảnh
+              </h3>
+            </div>
+          </div>
+          
+          <div class="file-upload-content-2 hidden text-center" ondragover="bindDragEvents('.image-upload-wrap-2')" ondragleave="bindDragEvents('.image-upload-wrap-2')">
+            <img class="file-upload-image-2 max-h-200 max-w-200 mx-auto p-4" src="#" alt="your image" />
+            <div class="image-title-wrap-2 px-4 pb-4 text-black">
+              <button type="button" onclick="removeUpload('.image-upload-wrap-2', '.file-upload-input-2', '.file-upload-content-2')" class="remove-image-2 w-200 m-0 text-white bg-red-600 border-none p-2 rounded-md border-b-4 border-red-800 transition-all duration-200 outline-none uppercase font-semibold hover:bg-red-700 hover:border-red-900">
+                Xóa hình ảnh <span class="image-title-2">Tên hình ảnh upload</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- <input type="file" name="" id=""> -->
       </div>
       <div class="w-9/12 ml-5 flex flex-col">
         <label for="">16. Ảnh chụp giấy chứng nhận ưu tiên (nếu có)</label>
-        <input type="file" name="" id="">
+        <div class="file-upload-3 bg-white w-full mx-auto">
+          <div class="image-upload-wrap-3 mt-5 border-2 border-dashed border-blue-300 relative hover:bg-blue-200 hover:border-dashed hover:border-white group">
+            <input class="file-upload-input-3 absolute m-0 p-0 w-full h-full outline-none opacity-0 cursor-pointer" type='file' onchange="readURL(this, '.image-upload-wrap-3', '.file-upload-image-3', '.file-upload-content-3', '.image-title-3');" accept="image/*" />
+            <div class="drag-text text-center">
+              <h3 class="font-medium text-uppercase text-green-800 py-12 group-hover:text-white">
+                Kéo và thả tệp hoặc chọn thêm hình ảnh
+              </h3>
+            </div>
+          </div>
+          
+          <div class="file-upload-content-3 hidden text-center" ondragover="bindDragEvents('.image-upload-wrap-3')" ondragleave="bindDragEvents('.image-upload-wrap-3')">
+            <img class="file-upload-image-3 max-h-200 max-w-200 mx-auto p-4" src="#" alt="your image" />
+            <div class="image-title-wrap-3 px-4 pb-4 text-black">
+              <button type="button" onclick="removeUpload('.image-upload-wrap-3', '.file-upload-input-3', '.file-upload-content-3')" class="remove-image-3 w-200 m-0 text-white bg-red-600 border-none p-2 rounded-md border-b-4 border-red-800 transition-all duration-200 outline-none uppercase font-semibold hover:bg-red-700 hover:border-red-900">
+                Xóa hình ảnh <span class="image-title-3">Tên hình ảnh upload</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- <input type="file" name="" id=""> -->
       </div>
     </div>
   </form>
   <div class="w-3/12 bg-red-400 h-80 max-2xl:w-9/12 max-md:w-full"></div>
+  <script>
+    function readURL(input, wrapClass, imageClass, contentClass, titleClass) {
+      if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+          $(wrapClass).hide();
+
+          $(imageClass).attr("src", e.target.result);
+          $(contentClass).show();
+
+          $(titleClass).html(input.files[0].name);
+        };
+
+        reader.readAsDataURL(input.files[0]);
+      } else {
+        removeUpload(wrapClass, inputClass, contentClass);
+      }
+    }
+
+    function removeUpload(wrapClass, inputClass, contentClass) {
+      $(inputClass).replaceWith($(inputClass).clone());
+      $(contentClass).hide();
+      $(wrapClass).show();
+    }
+
+    function bindDragEvents(wrapClass) {
+      $(wrapClass).bind("dragover", function () {
+        $(wrapClass).addClass("image-dropping");
+      });
+      $(wrapClass).bind("dragleave", function () {
+        $(wrapClass).removeClass("image-dropping");
+      });
+    }
+  </script>
 </body>
 </html>
